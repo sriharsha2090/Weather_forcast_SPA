@@ -1,0 +1,40 @@
+
+
+/*for image to be in middle*/
+.img-responsive.img-center {
+  margin: 0 auto;
+}
+
+/*sliding the images*/
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 220%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+.v-divider{
+ margin-left:5px;
+ margin-right:5px;
+ width:1px;
+ height:100%;
+ border-left:1px solid gray;
+}
